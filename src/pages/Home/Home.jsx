@@ -100,6 +100,7 @@ function Home() {
               <BiggerButton
                 content="SELECT BY FILTER"
                 myClass="goToFilterBtn"
+                src=""
               />
             </NavLink>
           </div>
