@@ -11,7 +11,7 @@ function Filter({ category, clickCategory, mouseOver, mouseOut, hooverText }) {
     >
       <img
         className="icon"
-        src={`../../Icon/${category}.png`}
+        src={`/Icon/${category}.png`}
         alt={category}
         onMouseOver={mouseOver}
         onFocus={mouseOver}

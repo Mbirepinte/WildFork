@@ -46,7 +46,7 @@ function SearchBar({ searchBarClass }) {
     <div>
       <div className="fullSearchBar">
         <div className={switchSearchBarClass}>
-          <img src="../../public/Icon/loup.png" alt="loupe" />
+          <img src="/Icon/loup.png" alt="loupe" />
           <input
             type="text"
             className={`${searchBarClass}Input`}
