@@ -93,11 +93,7 @@ function Home() {
           {menu && <SimplyMenu menu={menu} />}
           <div className="home">
             <button type="button" onClick={handleReload} className="reloadBtn">
-              <img
-                src="../../../public/Icon/reload.png"
-                alt=""
-                className="reloadPic"
-              />
+              <img src="/Icon/reload.png" alt="" className="reloadPic" />
             </button>
             <h2 className="homeOr">OR</h2>
             <NavLink to="./filterPage">
