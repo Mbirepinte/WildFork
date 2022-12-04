@@ -48,6 +48,8 @@ function FilterPage({ selectFilter, chooseMusic }) {
   const [categoryArray, setCategoryArray] = useState([]);
   const [button, setButton] = useState("-none");
   const [hooverText, setHooverText] = useState("");
+  console.log(typeof(hooverText),"hooverText");
+  console.log(typeof(category),"category");
 
   /*  Crée un tableau allMeals avec toutes les recettes au montage FilterPage */
   const allMeals = [];
@@ -217,8 +219,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
 
 export default FilterPage;
 
-/* FilterPage.propTypes = {
+FilterPage.propTypes = {
   selectFilter: PropTypes.func.isRequired,
   chooseMusic: PropTypes.func.isRequired,
 };
- */
