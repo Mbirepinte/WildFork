@@ -30,7 +30,7 @@ function Transition({
     <Routes>
       <Route path="/" element={<Home />} />
       <Route
-        path="/FilterPage"
+        path="/filterpage"
         element={
           <FilterPage selectFilter={selectFilter} chooseMusic={chooseMusic} />
         }
@@ -53,7 +53,7 @@ function Transition({
       <Route path="/Favorites" element={<Favorite favorite={favorite} />} />
       <Route path="/Contact" element={<Contact />} />
       <Route
-        path="/FilterResult"
+        path="/filter-result"
         element={
           <Result selectionArray={selectionArray} musicArea={musicArea} />
         }

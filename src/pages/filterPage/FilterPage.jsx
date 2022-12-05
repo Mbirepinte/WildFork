@@ -193,7 +193,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                   />
                 ))
               : area.map((flag) => (
-                  <Link to="../FilterResult">
+                  <Link to="../filter-result">
                     <Filter
                       category={flag}
                       clickCategory={chooseArea}

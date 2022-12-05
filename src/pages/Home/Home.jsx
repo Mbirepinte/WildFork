@@ -96,7 +96,7 @@ function Home() {
               <img src="/Icon/reload.png" alt="" className="reloadPic" />
             </button>
             <h2 className="homeOr">OR</h2>
-            <NavLink to="./filterPage">
+            <NavLink to="./filterpage">
               <BiggerButton
                 content="SELECT BY FILTER"
                 myClass="goToFilterBtn"
