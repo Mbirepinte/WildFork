@@ -16,10 +16,10 @@ function BiggerButton({ content, src, imgClass, myClass, myHandle }) {
 
 export default BiggerButton;
 
-BiggerButton.propTypes = {
+/* BiggerButton.propTypes = {
   content: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   imgClass: PropTypes.string.isRequired,
   myClass: PropTypes.string.isRequired,
   myHandle: PropTypes.func.isRequired,
-};
+}; */

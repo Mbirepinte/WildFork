@@ -38,10 +38,11 @@ function Filter({ category, clickCategory, mouseOver, mouseOut, hooverText }) {
 }
 export default Filter;
 
-Filter.propTypes = {
+/* Filter.propTypes = {
   category: PropTypes.undefined,
   hooverText: PropTypes.string.isRequired,
   clickCategory: PropTypes.func.isRequired,
   mouseOver: PropTypes.func.isRequired,
   mouseOut: PropTypes.func.isRequired,
 };
+ */
