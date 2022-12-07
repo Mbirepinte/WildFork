@@ -105,6 +105,7 @@ function Carousel({ selectionArray, musicArea }) {
     </div>
   );
 }
+export default Carousel;
 
 Carousel.propTypes = {
   selectionArray: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string))
@@ -112,4 +113,3 @@ Carousel.propTypes = {
   musicArea: PropTypes.string.isRequired,
 };
 
-export default Carousel;

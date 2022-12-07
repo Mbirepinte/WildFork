@@ -47,7 +47,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
   const [allRecipes, setAllRecipes] = useState([]);
   const [categoryArray, setCategoryArray] = useState([]);
   const [button, setButton] = useState("-none");
-  const [hooverText, setHooverText] = useState("");
+  const [hooverText, setHooverText] = useState("");       
 
   /*  Crée un tableau allMeals avec toutes les recettes au montage FilterPage */
   const allMeals = [];
