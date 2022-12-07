@@ -8,7 +8,10 @@ function SearchBar({ searchBarClass }) {
   const [recipes, setRecipes] = useState();
   const [recipesRequest, setRecipesRequest] = useState();
   const [switchSearchBarClass, setSwitchSearchBarClass] =
-    useState(searchBarClass);
+  useState(searchBarClass);
+  
+  console.warn(recipes, "recipes");
+  console.warn(recipesRequest, "recipesRequest");
 
   const handleSearchBar = () => {
     setRecipes("");
@@ -31,17 +34,18 @@ function SearchBar({ searchBarClass }) {
       }
     }
   }, [recipesRequest]);
+  
   useEffect(() => {
     if (!recipesRequest && recipes) {
-      const url = `http://wwww.themealdb.com/api/json/v1/1/search.php?f=${recipes.charAt(
-        0
-      )}`;
+      const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${recipes.charAt(0)}`;
       axios
         .get(url)
         .then((response) => response.data)
         .then((data) => setRecipesRequest(data.meals));
     }
   }, [recipes]);
+
+  
   return (
     <div>
       <div className="fullSearchBar">
