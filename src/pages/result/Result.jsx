@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 function Result({ selectionArray, musicArea }) {
+
+  const RMCarousel = Carousel.default? Carousel.default: Carousel;
   return (
     <motion.div
       className="result"
@@ -11,7 +13,7 @@ function Result({ selectionArray, musicArea }) {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.75 }}
     >
-      <Carousel selectionArray={selectionArray} musicArea={musicArea} />
+      <RMCarousel selectionArray={selectionArray} musicArea={musicArea} />
     </motion.div>
   );
 }
