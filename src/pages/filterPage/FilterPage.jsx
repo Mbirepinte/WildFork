@@ -181,7 +181,23 @@ function FilterPage({ selectFilter, chooseMusic }) {
       <div className="filter-block">
         <Title title={`SELECT BY ${filterTheme}`} />
         <div className="filter">
-          <Carousel responsive={responsive} draggable="false" ssr={true}>
+          <Carousel   swipeable={false}
+                      draggable={false}
+                      showDots={true}
+                      responsive={responsive}
+                      ssr={true} // means to render carousel on server-side.
+                      slidesToSlide={2}
+                      infinite={true}
+                      autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                      autoPlaySpeed={1000}
+                      keyBoardControl={true}
+                      customTransition="all .5"
+                      transitionDuration={500}
+                      containerClass="carousel-container"
+                      removeArrowOnDeviceType={["tablet", "mobile"]}
+                      deviceType={this.props.deviceType}
+                      dotListClass="custom-dot-list-style"
+                      itemClass="carousel-item-padding-40-px">
             {filterTheme === "CATEGORY" && filters.length > 0
               ? filters.map((icon) => (
                   <Filter
