@@ -30,7 +30,7 @@ function Carousel({ selectionArray, musicArea }) {
     beforeChange: (current, next) => setImageIndex(next),
   };
   const RMSlider = Slider.default? Slider.default: Slider;
-
+  const RMReactAudioPlayer = ReactAudioPlayer.default? ReactAudioPlayer.default: Slider;
   return (
     <div className="carouselPage">
       <div className={arrayLength < 4 ? "carouselNoSlider" : "carousel"}>
@@ -95,7 +95,7 @@ function Carousel({ selectionArray, musicArea }) {
         )} */}
       </div>
       {musicArea && (
-        <ReactAudioPlayer
+        <RMReactAudioPlayer
           src={`music/${musicArea}.mp3`}
           autoPlay="true"
           controls
