@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./carousel.css";
-import Slider from "@../../../node_modules/react-slick";
 import ReactAudioPlayer from "react-audio-player";
 import Button from "@components/ButtonExport/Button";
 import Title from "@components/Title/Title";
@@ -12,6 +11,7 @@ import Rating from "../rating/Rating";
 import NextArrow from "./Arrow/NextArrow";
 import PrevArrow from "./Arrow/PrevArrow";
 import RecipeName from "./Arrow/RecipeName";
+import Slider from "react-slick";
 
 function Carousel({ selectionArray, musicArea }) {
   const [imageIndex, setImageIndex] = useState(0);
