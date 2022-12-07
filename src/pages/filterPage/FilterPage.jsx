@@ -181,7 +181,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
       <div className="filter-block">
         <Title title={`SELECT BY ${filterTheme}`} />
         <div className="filter">
-          <Carousel responsive={responsive} draggable="false">
+          <Carousel responsive={responsive} draggable="false" ssr={true}>
             {filterTheme === "CATEGORY" && filters.length > 0
               ? filters.map((icon) => (
                   <Filter
