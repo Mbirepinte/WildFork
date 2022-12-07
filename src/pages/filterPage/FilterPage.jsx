@@ -219,8 +219,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
 
 export default FilterPage;
 
-/* FilterPage.propTypes = {
+FilterPage.propTypes = {
   selectFilter: PropTypes.func.isRequired,
   chooseMusic: PropTypes.func.isRequired,
 };
- */
