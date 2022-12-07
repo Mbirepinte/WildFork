@@ -29,6 +29,7 @@ function Carousel({ selectionArray, musicArea }) {
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setImageIndex(next),
   };
+  const RMSlider = Slider.default? Slider.default: Slider;
 
   return (
     <div className="carouselPage">
@@ -44,7 +45,7 @@ function Carousel({ selectionArray, musicArea }) {
             <div
               className={arrayLength < 4 ? "divMinusFour" : "noDivMinusFour"}
             >
-              <Slider {...settings}>
+              <RMSlider {...settings}>
                 {selectionArray.map((img, idx) => (
                   <div
                     className={
@@ -65,7 +66,7 @@ function Carousel({ selectionArray, musicArea }) {
                     </Link>
                   </div>
                 ))}
-              </Slider>
+              </RMSlider>
             </div>
           </>
         ) : (
