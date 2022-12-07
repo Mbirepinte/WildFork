@@ -42,7 +42,7 @@ function Carousel({ selectionArray, musicArea }) {
                 selectionArray={selectionArray}
               />
             </div>
-            <div
+        {/*     <div
               className={arrayLength < 4 ? "divMinusFour" : "noDivMinusFour"}
             >
               <RMSlider {...settings}>
@@ -67,7 +67,7 @@ function Carousel({ selectionArray, musicArea }) {
                   </div>
                 ))}
               </RMSlider>
-            </div>
+            </div> */}
           </>
         ) : (
           <div className="noSliderContainer">
@@ -105,8 +105,8 @@ function Carousel({ selectionArray, musicArea }) {
     </div>
   );
 }
-export default Carousel;
 
+export default Carousel;
 Carousel.propTypes = {
   selectionArray: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string))
     .isRequired,
