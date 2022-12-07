@@ -34,7 +34,7 @@ function Carousel({ selectionArray, musicArea }) {
   return (
     <div className="carouselPage">
       <div className={arrayLength < 4 ? "carouselNoSlider" : "carousel"}>
-       {/*  {arrayLength > 3 ? (
+        {arrayLength > 3 ? (
           <>
             <div>
               <RecipeName
@@ -92,7 +92,7 @@ function Carousel({ selectionArray, musicArea }) {
               </div>
             ))}
           </div>
-        )} */}
+        )} 
       </div>
       {musicArea && (
         <RMReactAudioPlayer
