@@ -189,7 +189,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                     clickCategory={categorySelector}
                     mouseOver={mouseOver}
                     mouseOut={mouseOut}
-                    hooverText={hooverText}
+                    /* hooverText={hooverText} */
                   />
                 ))
               : area.map((flag) => (
@@ -199,7 +199,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                       clickCategory={chooseArea}
                       mouseOver={mouseOverArea}
                       mouseOut={mouseOut}
-                      hooverText={hooverText}
+                     /*  hooverText={hooverText} */
                     />
                   </Link>
                 ))}
