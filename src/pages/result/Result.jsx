@@ -12,7 +12,8 @@ function Result({ selectionArray, musicArea }) {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.75 }}
     >
-      <Carousel selectionArray={selectionArray} musicArea={musicArea} />
+      <div>Coucou</div>
+     {/*  <Carousel selectionArray={selectionArray} musicArea={musicArea} /> */}
     </motion.div>
   );
 }
