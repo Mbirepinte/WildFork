@@ -34,7 +34,7 @@ function Carousel({ selectionArray, musicArea }) {
   return (
     <div className="carouselPage">
       <div className={arrayLength < 4 ? "carouselNoSlider" : "carousel"}>
-        {arrayLength > 3 ? (
+       {/*  {arrayLength > 3 ? (
           <>
             <div>
               <RecipeName
@@ -42,7 +42,7 @@ function Carousel({ selectionArray, musicArea }) {
                 selectionArray={selectionArray}
               />
             </div>
-        {/*     <div
+            <div
               className={arrayLength < 4 ? "divMinusFour" : "noDivMinusFour"}
             >
               <RMSlider {...settings}>
@@ -67,7 +67,7 @@ function Carousel({ selectionArray, musicArea }) {
                   </div>
                 ))}
               </RMSlider>
-            </div> */}
+            </div>
           </>
         ) : (
           <div className="noSliderContainer">
@@ -92,7 +92,7 @@ function Carousel({ selectionArray, musicArea }) {
               </div>
             ))}
           </div>
-        )}
+        )} */}
       </div>
       {musicArea && (
         <ReactAudioPlayer
