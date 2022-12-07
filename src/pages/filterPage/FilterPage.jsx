@@ -65,6 +65,8 @@ function FilterPage({ selectFilter, chooseMusic }) {
     });
   };
 
+  const RMCarousel = Carousel.default? Carousel.default: Carousel;
+
   const manipulateList = (list) => {
     if (list) {
       list.forEach((element) => allMeals.push(element));
@@ -181,7 +183,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
       <div className="filter-block">
         <Title title={`SELECT BY ${filterTheme}`} />
         <div className="filter">
-          <Carousel responsive={responsive} draggable="false" ssr>
+          <RMCarousel responsive={responsive} draggable="false" ssr>
             {filterTheme === "CATEGORY" && filters.length > 0
               ? filters.map((icon) => (
                   <Filter
@@ -203,7 +205,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                     />
                   </Link>
                 ))}
-          </Carousel>
+          </RMCarousel>
         </div>
         {button === "" ? (
           <Button
