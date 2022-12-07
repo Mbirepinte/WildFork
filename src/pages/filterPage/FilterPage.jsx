@@ -180,7 +180,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
     >
       <div className="filter-block">
         <Title title={`SELECT BY ${filterTheme}`} />
-        <div className="filter">
+{/*         <div className="filter">
           <Carousel responsive={responsive} draggable="false">
             {filterTheme === "CATEGORY" && filters.length > 0
               ? filters.map((icon) => (
@@ -204,7 +204,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                   </Link>
                 ))}
           </Carousel>
-        </div>
+        </div> */}
         {button === "" ? (
           <Button
             content="GO BACK TO CATEGORY"
