@@ -185,11 +185,11 @@ function FilterPage({ selectFilter, chooseMusic }) {
             {filterTheme === "CATEGORY" && filters.length > 0
               ? filters.map((icon) => (
                   <Filter
-                    category={icon.strCategory}
+                    category={"Beef"}
                     clickCategory={categorySelector}
                     mouseOver={mouseOver}
                     mouseOut={mouseOut}
-              
+                    hooverText={hooverText}
                   />
                 ))
               : area.map((flag) => (
@@ -199,7 +199,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                       clickCategory={chooseArea}
                       mouseOver={mouseOverArea}
                       mouseOut={mouseOut}
-             
+                      hooverText={hooverText}
                     />
                   </Link>
                 ))}

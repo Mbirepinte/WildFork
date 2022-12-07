@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 
 function Filter({ category, clickCategory, mouseOver, mouseOut, hooverText }) {
 
-/*   console.log(typeof(hooverText),"hooverText");
-  console.log(typeof(category),"category"); */
+
 
   return (
     <motion.div
