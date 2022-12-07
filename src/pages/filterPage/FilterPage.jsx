@@ -182,9 +182,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
         <Title title={`SELECT BY ${filterTheme}`} />
         <div className="filter">
           <Carousel responsive={responsive} draggable="false">
-
-            <img src="Icon/Beef.png" alt="" /><img src="Icon/Beef.png" alt="" /><img src="Icon/Beef.png" alt="" />
-    {/*         {filterTheme === "CATEGORY" && filters.length > 0
+            {filterTheme === "CATEGORY" && filters.length > 0
               ? filters.map((icon) => (
                   <Filter
                     category={icon.strCategory}
@@ -204,7 +202,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                       hooverText={hooverText}
                     />
                   </Link>
-                ))} */}
+                ))}
           </Carousel>
         </div>
         {button === "" ? (
@@ -222,6 +220,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
 export default FilterPage;
 
 FilterPage.propTypes = {
+  responsive: PropTypes.object,
   selectFilter: PropTypes.func.isRequired,
   chooseMusic: PropTypes.func.isRequired,
 };
