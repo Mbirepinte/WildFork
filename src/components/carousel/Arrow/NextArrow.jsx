@@ -5,7 +5,7 @@ function NextArrow({ onClick }) {
   return (
     <input
       type="image"
-      src="../../../public/Icon/fleche-droite.png"
+      src="/Icon/fleche-droite.png"
       alt="gauche"
       className="arrowRight"
       onClick={onClick}

@@ -5,7 +5,7 @@ function PrevArrow({ onClick }) {
   return (
     <input
       type="image"
-      src="../../public/Icon/fleche-gauche.png"
+      src="/Icon/fleche-gauche.png"
       alt="gauche"
       className="arrowLeft"
       onClick={onClick}
