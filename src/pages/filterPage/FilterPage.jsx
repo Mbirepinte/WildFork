@@ -180,7 +180,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
     >
       <div className="filter-block">
         <Title title={`SELECT BY ${filterTheme}`} />
-{/*         <div className="filter">
+        <div className="filter">
           <Carousel responsive={responsive} draggable="false">
             {filterTheme === "CATEGORY" && filters.length > 0
               ? filters.map((icon) => (
@@ -189,7 +189,7 @@ function FilterPage({ selectFilter, chooseMusic }) {
                     clickCategory={categorySelector}
                     mouseOver={mouseOver}
                     mouseOut={mouseOut}
-                    /* hooverText={hooverText} */
+              
                   />
                 ))
               : area.map((flag) => (
@@ -199,12 +199,12 @@ function FilterPage({ selectFilter, chooseMusic }) {
                       clickCategory={chooseArea}
                       mouseOver={mouseOverArea}
                       mouseOut={mouseOut}
-                     /*  hooverText={hooverText} */
+             
                     />
                   </Link>
                 ))}
           </Carousel>
-        </div> */}
+        </div>
         {button === "" ? (
           <Button
             content="GO BACK TO CATEGORY"
